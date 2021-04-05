@@ -18,7 +18,7 @@ class AvgStatViewModel(paths: MutableList<String?>) : ViewModel() {
             bioSignals.add(BioSignal(getDataSet(it)))
         }
         bioSignals.forEachIndexed { index, bioSignal ->
-            data.add(BarEntry(index.toFloat(), bioSignal.calcAvg(0,false)))
+            data.add(BarEntry(index.toFloat(), bioSignal.calcAvg(0)))
         }
     }
 
@@ -48,7 +48,7 @@ class AvgStatViewModel(paths: MutableList<String?>) : ViewModel() {
     fun updateSet(pos: Int) {
         data.clear()
         bioSignals.forEachIndexed { index, bioSignal ->
-            data.add(BarEntry(index.toFloat(), bioSignal.calcAvg(pos,false)))
+            data.add(BarEntry(index.toFloat(), bioSignal.calcAvg(pos)))
         }
     }
 }

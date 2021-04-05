@@ -39,7 +39,7 @@ class BarChartViewModel(private val path: String) : ViewModel() {
 
     fun updateSet(pos: Int): LineData {
         val set = LineDataSet(
-            bioSignal.selectByOrder(pos, true).mapIndexed { index, fl ->
+            bioSignal.selectByOrder(pos).mapIndexed { index, fl ->
                 Entry(index.toFloat(), fl)
             }, "DataSet1"
         )
