@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.hiro.biosignals.fragment.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/barChartFragment"
+        android:name="org.hiro.biosignals.fragment.BarChartFragment"
+        android:label="bar_chart_fragment"
+        tools:layout="@layout/bar_chart_fragment" />
+    <fragment
+        android:id="@+id/fragmentMain"
+        tools:layout="@layout/fragment_main"
+        android:name="org.hiro.biosignals.fragment.FragmentMain"
+        android:label="FragmentMain" />
+    <fragment
+        android:id="@+id/avgStatFragment"
+        android:name="org.hiro.biosignals.fragment.AvgStatFragment"
+        android:label="fragment_avg_stat"
+        tools:layout="@layout/fragment_avg_stat" />
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="org.hiro.biosignals.fragment.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" />
+    <fragment
+        android:id="@+id/dataSetFragment"
+        android:name="org.hiro.biosignals.fragment.DataSetFragment"
+        android:label="data_set_fragment"
+        tools:layout="@layout/data_set_fragment" />
+</navigation>
